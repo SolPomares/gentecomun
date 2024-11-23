@@ -157,7 +157,7 @@ function draw() {
 
 /*Agrego evento para que funcione al clickear botonPlay*/
 botonPlay.addEventListener("click", function() {
-  botonPlay.classList.add("shrink");
+  // botonPlay.classList.add("shrink");
   vid.muted = true;
   vid1.muted = true;
   vid.play();
