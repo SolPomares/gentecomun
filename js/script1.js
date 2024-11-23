@@ -1,5 +1,4 @@
 var botonPlay = document.getElementById("botonPlay");
-var videos = []; // Array para almacenar los elementos de video de p5.js
 
 botonPlay.addEventListener("click", function() {
   // Agregar la clase para la animación de "encoger"
@@ -15,8 +14,5 @@ botonPlay.addEventListener("click", function() {
     vid.loop();
     vid1.loop();
   
-  });
-
-/*button.hide()  // Mostrar un mensaje al usuario indicando que los videos se están reproduciendo en silencio
-  alert("Los videos se están reproduciendo silenciados. Haz clic en ellos para activar el sonido.");*/ 
+  }); 
 });
