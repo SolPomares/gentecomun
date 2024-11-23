@@ -1,13 +1,14 @@
 /*Taller de Obra Final
 Universidad Nacional de Quilmes
 GarciaPomares Maria Sol
-AGOSTO 2024*/
+AGOSTO 2024 - Ultima Versión Noviembre 2024*/
 
 //Carga de Variables
-
+var botonPlay = document.getElementById("BotonPlay");
 let luces = false;
 let posZ = 100;
 let vid, vid1;
+let cam;
 
 function preload() {
   vid = createVideo ('data/TOF1Mute.mp4');
@@ -41,7 +42,7 @@ function setup() {
 
 function draw() {
   //Fondo con transparencia variable, cambia segun el mouse
- clear();
+  clear();
   background(0, mouseX);
   noStroke();
   //orbitControl();
@@ -153,3 +154,14 @@ function draw() {
     pop();
   }
 }
+
+/*Agrego evento para que funcione al clickear botonPlay*/
+botonPlay.addEventListener("click", function() {
+  botonPlay.classList.add("shrink");
+  vid.muted = true;
+  vid1.muted = true;
+  vid.play();
+  vid1.play();
+  vid.loop();
+  vid1.loop();
+});
