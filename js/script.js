@@ -1,5 +1,4 @@
 /* Menu Toggle */
-
 $(document).ready(function(){
    $("#toggler").click(function(){
      $("#toggle-nav").fadeToggle(500);
