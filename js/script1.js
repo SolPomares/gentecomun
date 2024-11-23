@@ -1,5 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-  var botonPlay = document.getElementById("botonPlay");
+var botonPlay = document.getElementById("botonPlay");
 
   botonPlay.addEventListener("click", function() {
     // Agregar la clase para la animación de "encoger"
@@ -18,4 +17,3 @@ document.addEventListener('DOMContentLoaded', function() {
     }); 
 
   });
-});
