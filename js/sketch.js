@@ -156,12 +156,15 @@ function draw() {
 }
 
 /*Agrego evento para que funcione al clickear botonPlay*/
-botonPlay.addEventListener("click", function() {
-  // botonPlay.classList.add("shrink");
-  vid.muted = true;
-  vid1.muted = true;
-  vid.play();
-  vid1.play();
-  vid.loop();
-  vid1.loop();
+document.addEventListener('DOMContentLoaded', (event) => {
+    var botonPlay = document.getElementById("botonPlay");
+    botonPlay.addEventListener("click", function() {
+      // botonPlay.classList.add("shrink");
+      vid.muted = true;
+      vid1.muted = true;
+      vid.play();
+      vid1.play();
+      vid.loop();
+      vid1.loop();
+    });
 });
