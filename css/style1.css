@@ -259,7 +259,7 @@ p {
 
 @media screen and (min-width:768px) {
 	.navbar-brand-centered {
-		position: absolute;
+		position: flex;
 		left: 50%;
 		display: block;
 		width: 100%;
